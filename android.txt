@@ -1,0 +1,3 @@
+title=NameGenerator
+author=Saurav Kumar
+orientation=portrait

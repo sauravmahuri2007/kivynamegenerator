@@ -1,0 +1,44 @@
+#:kivy 1.0
+
+<NamesRoot>:
+    spacing: 10
+    padding: 10
+    orientation: 'vertical'
+
+    BoxLayout:
+        size_hint: 1, 1.5/10
+        Label:
+            text: 'Length of name'
+        TextInput:
+            id: name_len
+            input_type: 'number'
+
+    BoxLayout:
+        size_hint: 1, 1.5/10
+        Label:
+            text: 'Allowed Characters'
+        TextInput:
+            id: allowed_chars
+
+    BoxLayout:
+        size_hint: 1, 1.5/10
+        Label:
+            text: 'Number of names to suggest'
+        TextInput:
+            id: total_names
+            input_type: 'number'
+
+    BoxLayout:
+        size_hint: 1, 1.5/10
+        Button:
+            text: 'Suggest Names'
+            on_press: root.generate_names(name_len.text, allowed_chars.text, total_names.text)
+
+    BoxLayout:
+        size_hint: 1, 4.0/10
+        TextInput:
+            id: display_names
+            multiline: True
+            readonly: True
+
+
