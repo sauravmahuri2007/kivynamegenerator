@@ -1,3 +1,9 @@
+<div align="center">
+     <p>
+          <img src="./NameGenerator_Android_Screenshot.jpeg" width="350" height="328" alt="NameGenerator" />
+     </p>
+</div>
+
 # NameGenerator
 
 A simple Kivy app which gives the name suggestions based on the input config.
